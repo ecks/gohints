@@ -49,12 +49,6 @@ void *write_to_socket(void *sfd)
    {
      strcat(buf, "\n");
      send(sockfd, buf, strlen(buf), 0);
-//   char un[] = "ecks\n";
-//   sendall(sockfd, un, strlen(un));
-//   send(sockfd, un, strlen(un), 0);
-//   char pass[] = "8mvtku+3\n";
-//   send(sockfd, pass, strlen(pass), 0);
-//   sendall(sockfd, pass, strlen(pass));
    }
    pthread_exit(NULL);
 }
